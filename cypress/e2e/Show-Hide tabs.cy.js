@@ -5,22 +5,18 @@ describe('Show/hide tabs arrow', () => {
         cy.visit('https://jira.trungk18.com/project/board')
 
         cy.get('[class="sidebar"]')
-        .invoke('css', 'width')
+        .should('have.css', 'width', '240px')
         .then((width) => {
 
             if(width === '240px') {
 
                 cy.get('[class="overlay"]').click()
-
-                cy.get('[class="sidebar"]')
-                .should('have.css', 'width', '15px')
+                cy.get('[class="sidebar"]').should('have.css', 'width', '15px')
 
             }else {
 
                 cy.get('[class="overlay"]').click()
-
-                cy.get('[class="sidebar"]')
-                .should('have.css', 'width', '240px')
+                cy.get('[class="sidebar"]').should('have.css', 'width', '240px')
             }
          })
     })
@@ -35,6 +31,7 @@ describe('Show/hide tabs arrow', () => {
 
         cy.get('[class="sidebar"]')
         .then((width) => {
+
             if(width === '15px') {
                 cy.get('[class="overlay"]').click()
                 cy.get('[class="sidebar"]').should('have.css', 'width', '240px')
