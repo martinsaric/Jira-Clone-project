@@ -4,6 +4,25 @@ describe('Show/hide tabs arrow', () => {
         
         cy.visit('https://jira.trungk18.com/project/board')
 
-        cy.get('[class="overlay"]').click()
+        cy.get('[class="sidebar-content"]')
+        .then(($sidebar) => {
+
+            const sideBarContent = $sidebar.text()
+
+            if(sideBarContent.includes('Kanban Board')) {
+
+                cy.get('[class="overlay"]').click()
+
+                cy.get('[class="sidebar"]')
+                .should('have.css', 'width', '15px')
+
+            }else {
+
+                cy.get('[class="overlay"]').click()
+
+                cy.get('[class="sidebar"]')
+                .should('have.css', 'width', '240px')
+            }
+         })
     })
 })
