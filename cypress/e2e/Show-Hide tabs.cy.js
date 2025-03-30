@@ -5,11 +5,10 @@ describe('Show/hide tabs arrow', () => {
         cy.visit('https://jira.trungk18.com/project/board')
 
         cy.get('[class="sidebar-content"]')
-        .then(($sidebar) => {
+        .invoke('css', 'width')
+        .then((width) => {
 
-            const sideBarContent = $sidebar.text()
-
-            if(sideBarContent.includes('Kanban Board')) {
+            if(width === '240px') {
 
                 cy.get('[class="overlay"]').click()
 
