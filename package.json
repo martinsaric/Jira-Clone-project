@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test-run": "cypress run --spec cypress/e2e/Board/Search_bar.cy.js"
+    "test-run": "cypress run --spec cypress/e2e/Board/Search_bar.cy.js",
+    "test-run1": "cypress run --spec cypress/e2e/Board/Quick_links.cy.js"
   },
   "author": "",
   "license": "ISC",
