@@ -13,7 +13,7 @@ describe('Quick links', () => {
     it('Verify that the "Tetris" quick link redirects to the correct page', () => {
 
         //Step1: Visit the Jira board
-        cy.baseULR()
+        cy.baseURL()
 
         //Step:2 Find a Tetris link
         cy.get('a[href="https://tetris.trungk18.com/"]')

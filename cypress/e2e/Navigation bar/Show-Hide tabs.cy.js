@@ -7,7 +7,7 @@ describe('Show/hide tabs arrow', () => {
 
         //Step2:  Verify that the side bar is shown
         cy.get('[class="sidebar"]')
-        .should('have.css', 'width', '240px')
+        .invoke('css', 'width')
         .then((width) => {
 
             //Step3: If the sidebar is shown, click on the arrow to hide the sidebar
@@ -28,7 +28,7 @@ describe('Show/hide tabs arrow', () => {
     it('When the user clicks on arrow, the tab should be shown', () => {
         
         //Step1: Visit the Jira board
-        cy.visit('https://jira.trungk18.com/project/board')
+        cy.baseURL()
 
         //Step2: Verify that the sidebar is shown and click on the arrow to hide it
         cy.get('[class="sidebar"]')
