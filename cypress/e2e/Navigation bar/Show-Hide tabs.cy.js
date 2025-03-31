@@ -3,7 +3,7 @@ describe('Show/hide tabs arrow', () => {
     it('When the user clicks on arrow, the tab should be hidden', () => {
         
         //Step1: Visit the Jira board
-        cy.visit('https://jira.trungk18.com/project/board')
+        cy.baseURL()
 
         //Step2:  Verify that the side bar is shown
         cy.get('[class="sidebar"]')

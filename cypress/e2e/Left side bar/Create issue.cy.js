@@ -2,7 +2,7 @@ describe('Create issue', () => {
   it('An issue "Bug" can be created successfully', () => {
 
     // Step:1 Visit the Jira board
-    cy.visit('https://jira.trungk18.com/project/board')
+    cy.baseURL()
 
     // Step:2 Click on the "Create issue" button
     cy.get('[class="anticon text-xl text-white anticon-plus"]').click()

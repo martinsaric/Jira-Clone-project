@@ -3,7 +3,7 @@ describe('Quick links', () => {
     it('Verify that the "Tetris" quick link is displayed ', () => {
         
         //Step1: Visit the Jira board
-        cy.visit('https://jira.trungk18.com/project/board')
+        cy.baseURL()
 
         cy.get('[class="btn btn-secondary mr-2"]')
         .contains('Tetris')
@@ -13,7 +13,7 @@ describe('Quick links', () => {
     it('Verify that the "Tetris" quick link redirects to the correct page', () => {
 
         //Step1: Visit the Jira board
-        cy.visit('https://jira.trungk18.com/project/board')
+        cy.baseULR()
 
         //Step:2 Find a Tetris link
         cy.get('a[href="https://tetris.trungk18.com/"]')

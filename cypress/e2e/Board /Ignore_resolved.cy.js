@@ -3,7 +3,7 @@ describe('Ignore resolved', () => {
     it('When the user clicks on "Ignore resolved" button, the resolved tasks should be hidden', () => {
 
         //Step1: Visit the Jira board
-        cy.visit('https://jira.trungk18.com/project/board')
+        cy.baseURL()
 
         //Step2: Click on the "Ignore resolved" button
         cy.get('[class="ml-3"]')
