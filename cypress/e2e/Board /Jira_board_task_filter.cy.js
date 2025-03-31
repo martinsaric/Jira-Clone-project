@@ -1,5 +1,5 @@
 describe('Jira board task filter', () => {
-    it('When "only me" is selected, only task assigned to me should be displayed', () => {
+    it('Clicking "Only Me" filter shows only tasks assigned to the logged in user', () => {
 
         cy.baseURL()
 
