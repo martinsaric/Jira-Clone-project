@@ -5,14 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test-run": "cypress run --spec cypress/e2e/Board/Search-bar.cy.js",
-    "test-run1": "cypress run --spec cypress/e2e/Board/Quick_links.cy.js"
+    "test-run": "cypress run --spec ./cypress/e2e/Board/Search_bar.cy.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^14.2.1",
-    "cypress-mochawesome-reporter": "^3.8.2"
+    "cypress": "^14.2.1"
   },
   "dependencies": {
     "cypress-xpath": "^2.0.1"
