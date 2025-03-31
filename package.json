@@ -5,20 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "test-run-all": "cypress run --spec ./cypress/e2e/**/*.cy.js",
     "test-run1": "cypress run --spec ./cypress/e2e/Board/Search_bar.cy.js",
     "test-run2": "cypress run --spec ./cypress/e2e/Board/Quick_links.cy.js",
     "test-run3": "cypress run --spec ./cypress/e2e/Board/Ignore_resolved.cy.js",
     "test-run4": "cypress run --spec ./cypress/e2e/Board/Clear_All.cy.js",
     "test-run5": "cypress run --spec ./cypress/e2e/Board/Jira_board_task_filter.cy.js",
-    "test-run6": "cypress run --spec ./cypress/e2e/Left side bar/Create_issue.cy.js",
-    "test-run7": "cypress run --spec ./cypress/e2e/Navigation bar/Change_project_settings.cy.js",
-    "test-run8": "cypress run --spec ./cypress/e2e/Navigation bar/Show-hide_tabs.cy.js"
-    
+    "test-run6": "cypress run --spec ./cypress/e2e/Left-side-bar/Create_issue.cy.js",
+    "test-run7": "cypress run --spec ./cypress/e2e/Navigation-bar/Change_project_settings.cy.js",
+    "test-run8": "cypress run --spec ./cypress/e2e/Navigation-bar/Show-Hide_tabs.cy.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^14.2.1"
+    "cypress": "^14.2.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
   },
   "dependencies": {
     "cypress-xpath": "^2.0.1"
