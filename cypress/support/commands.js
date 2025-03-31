@@ -25,8 +25,8 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 
-cypress.commands.add('baseURL', () => {
+Cypress.Commands.add('baseURL', () => {
 
     cy.visit('https://jira.trungk18.com/project/board')
-    
+
     })
