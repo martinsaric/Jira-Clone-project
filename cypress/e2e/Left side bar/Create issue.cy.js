@@ -5,7 +5,7 @@ describe('Create issue', () => {
     cy.baseURL()
 
     // Step:2 Click on the "Create issue" button
-    cy.createIssueButton().click()
+    cy.createIssueSideButton().click()
 
     // Step:3 Select the type (Bug)
     cy.get('[class="ant-select-selector ng-tns-c95-64"]').click()
@@ -38,7 +38,7 @@ describe('Create issue', () => {
     .click()
 
     //Step:8 Click on the "Create issue" button
-    cy.get('[class="btn btn-primary mr-2"]')
+    cy.createIssueButton()
     .should('have.css', 'background-color', 'rgb(0, 82, 204)')
     .click()
   })

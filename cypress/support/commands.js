@@ -31,7 +31,19 @@ Cypress.Commands.add('baseURL', () => {
 
 })
 
-Cypress.Commands.add('CreateIssueButton', () => {
+Cypress.Commands.add('createIssueSideButton', () => {
 
     cy.get('[class="anticon text-xl text-white anticon-plus"]')
+})
+
+Cypress.Commands.add('createIssueButton', () => {
+
+    cy.get('[class="btn btn-primary mr-2"]')
+})
+
+Cypress.Commands.add('ignoreResolvedButton', () => {
+
+    cy.get('[class="ml-3"]')
+        .contains('Ignore Resolved')
+
 })

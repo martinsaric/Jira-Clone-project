@@ -6,8 +6,7 @@ describe('Ignore resolved', () => {
         cy.baseURL()
 
         //Step2: Click on the "Ignore resolved" button
-        cy.get('[class="ml-3"]')
-        .contains('Ignore Resolved')
+        cy.ignoreResolved()
         .click()
 
         //Step3: Verify that column name "Done" is displayed

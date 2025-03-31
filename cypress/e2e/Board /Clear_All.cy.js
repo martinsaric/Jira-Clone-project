@@ -5,8 +5,7 @@ describe('Clear all button', () => {
         cy.baseURL()
 
         //Step2: Click on the "Ignore Resolved" button
-        cy.get('[class="ml-3"]')
-        .contains('Ignore Resolved')
+        cy.ignoreResolvedButton()
         .click()
 
         //Step3: Verify that the "Done" column doesn't show any tasks
