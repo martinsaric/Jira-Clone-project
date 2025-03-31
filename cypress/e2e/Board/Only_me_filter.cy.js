@@ -1,4 +1,4 @@
-describe('Jira board task filter', () => {
+describe('Only me filter', () => {
     it('Clicking "Only Me" filter shows only tasks assigned to the logged in user', () => {
 
         //Step1: Visit the Jira board

@@ -1,4 +1,4 @@
-describe('Ignore resolved', () => {
+describe('Ignore resolved filter', () => {
 
     it('Clicking the "Ignore Resolved" filter hides resolved tasks', () => {
 
