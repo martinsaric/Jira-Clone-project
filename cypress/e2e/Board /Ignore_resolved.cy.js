@@ -1,6 +1,6 @@
 describe('Ignore resolved', () => {
 
-    it('When the user clicks on "Ignore resolved" button, the resolved tasks should be hidden', () => {
+    it('Clicking the "Ignore Resolved" filter hides resolved tasks', () => {
 
         //Step1: Visit the Jira board
         cy.baseURL()

@@ -1,5 +1,5 @@
 describe('Clear all button', () => {
-    it('Verify that the "Clear All" removes "Ignore Resolved" filter', () => {
+    it('Verify that the "Clear All" button removes "Ignore Resolved" filter', () => {
 
         //Step1: Open the Jira board
         cy.baseURL()
