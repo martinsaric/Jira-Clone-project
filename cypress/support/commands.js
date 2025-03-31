@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+cypress.commands.add('baseURL', () => {
+
+    cy.visit('https://jira.trungk18.com/project/board')
+    
+    })
