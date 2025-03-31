@@ -29,4 +29,9 @@ Cypress.Commands.add('baseURL', () => {
 
     cy.visit('https://jira.trungk18.com/project/board')
 
-    })
+})
+
+Cypress.Commands.add('CreateIssueButton', () => {
+
+    cy.get('[class="anticon text-xl text-white anticon-plus"]')
+})

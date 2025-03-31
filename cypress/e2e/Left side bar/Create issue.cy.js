@@ -5,7 +5,7 @@ describe('Create issue', () => {
     cy.baseURL()
 
     // Step:2 Click on the "Create issue" button
-    cy.get('[class="anticon text-xl text-white anticon-plus"]').click()
+    cy.createIssueButton().click()
 
     // Step:3 Select the type (Bug)
     cy.get('[class="ant-select-selector ng-tns-c95-64"]').click()
